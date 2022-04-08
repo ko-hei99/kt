@@ -1,0 +1,373 @@
+@media screen and (min-width: 768px) {
+  .access {
+    position: relative;
+  }
+  .access::before {
+    position: absolute;
+    content: "";
+    background: #f8f8f8;
+    width: 60%;
+    height: 60%;
+    top: -70px;
+    left: 0;
+    z-index: 1;
+  }
+}
+.access h2 {
+  margin-left: 14%;
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 767px) {
+  .access h2 {
+    margin-left: 0;
+  }
+}
+
+.access-top-title {
+  padding-top: 20px;
+}
+@media screen and (max-width: 767px) {
+  .access-top-title {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 100px;
+  }
+}
+
+.access-inner {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .access-wrap {
+    display: flex;
+  }
+}
+
+.gm-wrap {
+  width: 580px;
+  height: 420px;
+  margin-top: 124px;
+  z-index: 2;
+}
+@media screen and (max-width: 767px) {
+  .gm-wrap {
+    width: 100%;
+    height: 380px;
+    margin-top: 60px;
+  }
+}
+.gm-wrap iframe {
+  width: 580px;
+  height: 420px;
+}
+@media screen and (max-width: 767px) {
+  .gm-wrap iframe {
+    width: 100%;
+    height: 380px;
+  }
+}
+
+.access-box {
+  margin-left: auto;
+}
+
+.access-texts {
+  border: 1px solid #D6D3D3;
+  height: 250px;
+  padding: 74px 40px;
+  box-shadow: #00000029 3px 3px 6px;
+  border-radius: 3px;
+  z-index: 2;
+  position: relative;
+  background: #fff;
+}
+@media screen and (max-width: 767px) {
+  .access-texts {
+    padding: 40px;
+    height: 100%;
+    margin-top: 160px;
+  }
+}
+.access-texts hr {
+  width: 464px;
+  margin-top: 46px;
+}
+@media screen and (max-width: 767px) {
+  .access-texts hr {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.access-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+}
+@media screen and (max-width: 767px) {
+  .access-title {
+    font-size: 20px;
+  }
+}
+
+.access-lead {
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+  margin-top: 46px;
+}
+@media screen and (max-width: 767px) {
+  .access-lead {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+  }
+}
+
+.access-price-lead {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 6px;
+}
+@media screen and (max-width: 767px) {
+  .access-price-lead {
+    font-size: 16px;
+  }
+}
+.access-price-lead span {
+  background: linear-gradient(transparent 60%, #FFAF52A2 60%);
+}
+
+.access-detail {
+  margin-top: 70px;
+  margin-left: 25px;
+}
+@media screen and (max-width: 767px) {
+  .access-detail {
+    margin-left: 0;
+  }
+}
+
+.one-park {
+  background: #00097b;
+  color: #fff;
+  width: 170px;
+  padding: 24px 12px;
+  border-radius: 12px;
+  position: relative;
+  text-align: center;
+  margin-left: 190px;
+}
+@media screen and (max-width: 767px) {
+  .one-park {
+    margin-right: 150px;
+    margin-left: 0;
+    width: 160px;
+    margin-left: 170px;
+  }
+}
+.one-park::after {
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  position: absolute;
+  border-color: rgba(0, 9, 123, 0);
+  border-top-width: 18px;
+  border-bottom-width: 18px;
+  border-left-width: 16px;
+  border-right-width: 16px;
+  margin-left: -16px;
+  border-top-color: #00097B;
+  top: 100%;
+  left: 83%;
+}
+
+.one-park-text {
+  font-size: 22px;
+  text-align: center;
+}
+.one-park-text span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.access-parking-map {
+  display: flex;
+  margin-top: 42px;
+  margin-left: 50px;
+}
+@media screen and (max-width: 767px) {
+  .access-parking-map {
+    margin-left: 20px;
+  }
+}
+
+.mandai {
+  background: #d6d3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 14px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+@media screen and (max-width: 767px) {
+  .mandai {
+    padding: 0 20px;
+    width: 80px;
+  }
+}
+
+.mandai-text {
+  color: #707070;
+  text-align: center;
+}
+
+.soukagakkai {
+  background: #d6d3d3;
+  margin-left: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 14px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+@media screen and (max-width: 767px) {
+  .soukagakkai {
+    width: 100px;
+  }
+}
+
+.soukagakkai-text {
+  text-align: center;
+  color: #707070;
+}
+
+.parking {
+  background: #00097b;
+  margin-left: 14px;
+  height: 93px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 14px;
+  border-radius: 4px;
+}
+
+.parking-text {
+  height: 38px;
+  width: 38px;
+  font-size: 26px;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.access-map-load {
+  width: 452px;
+  height: 24px;
+  background: #d6d3d3;
+  margin-top: 14px;
+}
+@media screen and (max-width: 767px) {
+  .access-map-load {
+    width: 100%;
+  }
+}
+
+.access-store {
+  display: flex;
+  margin-top: 14px;
+  margin-left: 100px;
+}
+@media screen and (max-width: 767px) {
+  .access-store {
+    margin-left: 70px;
+  }
+}
+
+.access-star {
+  font-size: 38px;
+  margin-top: 50px;
+  color: #FF0058;
+  margin-right: 30px;
+  margin-top: 8px;
+}
+
+.store-place {
+  position: relative;
+  width: 130px;
+  height: 80px;
+  background: #FF0058;
+  padding: 10px;
+  text-align: center;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+@media screen and (max-width: 767px) {
+  .store-place {
+    padding: 20px 15px;
+    width: 140px;
+    height: 100%;
+    margin-top: 10px;
+  }
+}
+.store-place::after {
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  position: absolute;
+  border-color: rgba(255, 0, 88, 0);
+  border-top-width: 12px;
+  border-bottom-width: 12px;
+  border-left-width: 22px;
+  border-right-width: 22px;
+  margin-top: -18px;
+  border-right-color: #FF0058;
+  right: 100%;
+  top: 44%;
+}
+.store-place p {
+  font-size: 22px;
+  font-weight: 600;
+}
+@media screen and (max-width: 767px) {
+  .store-place p {
+    font-size: 18px;
+  }
+}
+
+.access-btn {
+  width: 580px;
+}
+@media screen and (min-width: 768px) {
+  .access-btn {
+    margin-top: -320px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .access-btn {
+    width: 100%;
+    position: absolute;
+    content: "";
+    top: 405px;
+    left: 0;
+    height: 100px;
+  }
+}
+.access-btn a {
+  font-size: 22px;
+  letter-spacing: 2px;
+}

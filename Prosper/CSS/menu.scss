@@ -1,0 +1,246 @@
+$breakpoints: (
+    "sp": "screen and (max-width: 767px)",
+	"pc": "screen and (min-width: 768px)",
+) !default;
+
+@mixin mq($breakpoint: sp) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+
+.menu {
+    position: relative;
+
+    @include mq(pc) {
+        &::before {
+            position: absolute;
+            content: "";
+            background: #f8f8f8;
+            width: 89%;
+            height: 63%;
+            top: -70px;
+            right: 0;
+            z-index: 2;
+        }
+    
+        &::after {
+            position: absolute;
+            content: "";
+            background: #fffef2;
+            width: 42%;
+            height: 650px;
+            top: 440px;
+            left: 0;
+            z-index: 1;
+        }
+        
+    }
+    
+
+    hr {
+        width: 300px;
+
+        @include mq(sp) {
+            width: 95%;
+        }
+    }
+}
+
+.menu-title-top {
+    text-align: center;
+    z-index: 1;
+    color: #333;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 3;
+
+    @include mq(sp) {
+        font-size: 40px;
+        margin-top: 60px;
+    }
+}
+
+.menu-parent {
+    margin-top: 88px;
+    @include mq(pc) {
+        
+        justify-content: space-between;
+        display: flex;
+    }
+
+    @include mq(sp) {
+        margin-top: 40px;
+    }
+}
+
+.menu-box {
+    width: 333px;
+    border-radius: 4px 4px 4px 4px;
+    background-color: #fff;
+    border: 1px solid #D6D3D3;
+    box-shadow: #00000029 3px 3px 6px;
+    z-index: 2;
+
+    @include mq(sp) {
+        width: 100%;
+        box-shadow: none;
+
+        &:nth-of-type(n + 2) {
+            margin-top: 60px;
+        }
+    }
+}
+
+.menu-img {
+    border-radius: 4px 4px 4px 4px;
+    
+    @include mq(pc) {
+        width: 333px;
+    }
+
+    @include mq(sp) {
+        width: 100%;
+    }
+}
+
+.menu-padding-wrapper {
+
+}
+
+.menu-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-left: 28px;
+
+    @include mq(sp) {
+        font-size: 32px;
+        margin-left: 40px;
+    }
+}
+
+.menu-title-sub {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 120px;
+    margin-bottom: 28px;
+
+    span {
+        color: #DB0000;
+    }
+
+    @include mq(sp) {
+        font-size: 20px;
+        margin-left: 140px;
+        margin-bottom: 20px;
+        margin-top: 8px;
+    }
+}
+
+.course-lead {
+    text-align: left;
+    font-weight: 600;
+    margin: 28px;
+    line-height: 25px;
+
+    span {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    @include mq(sp) {
+        margin: 28px auto;
+        font-size: 18px;
+        width: 90%;
+        letter-spacing: 1.5px;
+        line-height: 28px;
+    }
+}
+
+.course-menu-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FF0058;
+    margin-top: 28px;
+    margin-left: 28px;
+
+    @include mq(sp) {
+        margin-left: 36px;
+    }
+
+    span {
+        font-size: 22px;
+    }
+}
+
+.course-menu-lead {
+    font-weight: 600;
+    margin-left: 34px;
+    margin-top: 14px;
+    font-size: 18px;
+
+
+    span {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    @include mq(sp) {
+        text-align: center;
+        margin-left: 150px;
+        font-size: 20px;
+        margin-top: 6px;
+    }
+}
+
+.price-box {
+    display: flex;
+    vertical-align: bottom;
+}
+
+.course-price1 {
+    font-size: 24px;
+    margin-left: 76px;
+    margin-top: 32px;
+    margin-bottom: 28px;
+    font-weight: 600;
+
+    @include mq(sp) {
+        margin-top: 12px;
+        font-size: 28px;
+        margin-left: 66px;
+        margin-bottom: 12px;
+    }
+
+    span {
+        font-size: 32px;
+        font-weight: 700;
+        background: linear-gradient(transparent 60%, #F5FF00A2 60%);
+
+        @include mq(sp) {
+            font-size: 40px;
+        }
+    }
+}
+
+.course-price2 {
+    font-size: 32px;
+}
+
+.menu-btn-wrap {
+    width: 275px;
+    margin: 40px auto;
+
+    @include mq(sp) {
+        width: 360px;
+        margin: 30px auto;
+    }
+
+}
+
+.test {
+    opacity: 1;
+}
+

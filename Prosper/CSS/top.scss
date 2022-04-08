@@ -1,0 +1,58 @@
+$breakpoints: (
+    "sp": "screen and (max-width: 767px)",
+	"pc": "screen and (min-width: 768px)",
+) !default;
+
+@mixin mq($breakpoint: sp) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+
+.top {
+    background: url(../img/top.jpeg) no-repeat center center / cover;
+    height: 798px;
+    position: relative;
+    
+    @include mq(sp) {
+        background: url(../img/top.jpeg) no-repeat top left / cover;
+    }
+}
+
+.top-box {
+    position: absolute;
+    content: "";
+    width: 550px;
+    height: 348px;
+    background-color: #fff;
+    margin-left: 50%;
+    margin-top: 306px;
+    display: table;
+    text-align: center;
+
+    @include mq(sp) {
+        display: none;
+    }
+}
+
+.top-text {
+    font-size: 44px;
+    font-weight: 600;
+    text-align: left;
+    padding-top: 95px;
+    padding-left: 10px;
+    display: table-cell;
+    display: inline-block;
+
+
+    @include mq(sp) {
+        display: none;
+    }
+
+    span {
+        color: #FF0058AA;
+        font-size: 50px;
+        font-weight: 700;
+    }
+}

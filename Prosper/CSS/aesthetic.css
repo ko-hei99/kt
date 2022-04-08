@@ -1,0 +1,131 @@
+.aesthetic {
+  margin-top: 370px;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .aesthetic {
+    margin-top: 140px;
+  }
+}
+
+.aesthetic-top {
+  position: relative;
+}
+
+.aesthetic-title {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size: 54px;
+  font-weight: 600;
+  color: #fff;
+  z-index: 2;
+}
+@media screen and (max-width: 767px) {
+  .aesthetic-title {
+    font-size: 30px;
+  }
+}
+
+.aesthetic-img {
+  opacity: 0.8;
+}
+@media screen and (max-width: 767px) {
+  .aesthetic-img {
+    height: 90px;
+  }
+}
+
+.corse-title {
+  font-size: 46px;
+  text-align: center;
+  font-weight: 600;
+  width: 380px;
+  border-bottom: 8px solid #FFAF52A2;
+  padding-bottom: 14px;
+}
+@media screen and (min-width: 768px) {
+  .corse-title {
+    margin: 120px auto 112px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .corse-title {
+    font-size: 30px;
+    width: 250px;
+    margin: 60px auto;
+  }
+}
+
+.slick-item {
+  margin: 20px;
+  box-shadow: #00000029 3px 3px 6px;
+  max-width: 388px;
+}
+
+.slick-item-link {
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.slick-item-img {
+  max-width: 388px;
+  height: 300px;
+}
+
+.slick-item-lead {
+  max-width: 388px;
+  height: 100%;
+  border: 1px solid #D6D3D3;
+  padding: 40px 32px;
+  box-sizing: border-box;
+}
+
+.slick-item-title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+}
+.slick-item-title span {
+  font-size: 32px;
+  color: #DB0000;
+  background: linear-gradient(transparent 60%, #FFAF52A2 60%);
+}
+
+.slick-item-box {
+  margin-top: 22px;
+}
+
+.slick-item-time {
+  color: #000;
+  font-weight: 700;
+  margin-left: 20px;
+}
+.slick-item-time span {
+  font-size: 20px;
+}
+
+.slick-item-price {
+  color: #000;
+  font-size: 46px;
+  margin-left: 120px;
+  font-weight: 700;
+  width: 194px;
+  background: linear-gradient(transparent 60%, #F5FF00A2 30%);
+}
+
+@media screen and (min-width: 768px) {
+  .slick-btn {
+    width: 796px;
+    margin: 150px auto 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slick-btn {
+    width: 100%;
+  }
+}
+.slick-btn a {
+  font-size: 22px;
+}

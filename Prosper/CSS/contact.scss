@@ -1,0 +1,182 @@
+$breakpoints: (
+    "sp": "screen and (max-width: 767px)",
+	"pc": "screen and (min-width: 768px)",
+) !default;
+
+@mixin mq($breakpoint: sp) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+
+.contact {
+    background: #fafafa;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    display: none;
+}
+
+.contact-inner {
+    background: #fff;
+    border: 1px solid #D6D3D3;
+    border-radius: 4px;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 54px;
+    font-weight: 600;
+    margin-top: 176px;
+}
+
+.contact-form {
+    padding: 129px 120px;
+}
+
+.contact-wrapper {
+    max-width: 960px;
+    
+    &:nth-of-type(n + 2) {
+        margin-top: 80px;
+    }
+}
+
+.contact-require {
+    
+}
+
+.contact-wrapper-title {
+    width: 288px;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 600;
+    
+        span {
+            background: red;
+            color: #fff;
+            padding: 6px 10px;
+            border-radius: 4px;
+            margin-left: 20px;
+        }
+}
+
+.contact-text {
+    border-bottom: 1px solid #cccccc;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    width: 600px;
+    font-size: 22px;
+    opacity: 0.8;
+
+    @include mq(sp) {
+        width: 100%;
+    }
+}
+
+.contact-radio {
+    display: inline-block;
+}
+
+.contact-radio1 {
+    font-size: 22px;
+}
+
+.contact-radio2 {
+    font-size: 22px;
+    margin-left: 28px;
+}
+
+.contact-radio3 {
+    font-size: 22px;
+    margin-left: 22px;
+}
+
+.contact-radio-input {
+
+}
+
+.contact-message {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 80px;
+
+    textarea {
+        display: block;
+        width: 100%;
+        height: 354px;
+        margin-top: 14px;
+        border-radius: 4px;
+    }
+}
+
+.contact-footer {
+
+}
+
+.contact-footer-box {
+    margin-top: 50px;
+    display: table;
+}
+
+.contact-privacy {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.contact-privacy-input {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-privacy-part {
+    
+}
+
+.contact-footer-text {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 14px;
+    margin-top: -2px;
+}
+
+.contact-footer-submit {
+    margin-top: 50px;
+
+    button {
+        
+    }
+}
+
+.submit-btn {
+    padding: 15px 80px;
+    border-radius: 8px;
+    text-decoration: none;
+    background: #b1aeae;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "ヒラギノ明朝 ProN";
+
+    &.-active {
+        background: #ffaa3b;
+        transition: all 0.3s ease 0s;
+    }
+}
+
+.end-message {
+    display: none;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+  
+.false-message {
+    display: none;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
